@@ -1,0 +1,98 @@
+/*----------------------------------
+1.HTML elements
+2.Text field
+3.Text field - text
+4.Button done
+5.Button done - text
+6.Button del
+7.Button del - text
+----------------------------------*/
+
+body {
+    background-image: linear-gradient(to right, #00d2fd, #090d7b) ;
+}
+body > h2 {
+    text-transform: capitalize;
+    text-align: center;
+    margin: 30px 0 78px 0;
+}
+/* HTML elements */
+body > div:first-child {
+    margin: 0 0 35px 0;
+}
+body > div > input {
+    display: inline-block;
+    border-style: none;
+    width: 360px;
+    height: 28px;
+}
+body > div > button {
+    width: 49px;
+    height: 29px;
+    text-transform: capitalize;
+    font-size: 8px;
+    position: relative;
+    bottom: 3px;
+    cursor: pointer;
+    border-style: none;
+    margin: 0 0 35px 5px;
+}
+#rowHolder > div {
+    margin: 0 14px 0 0;
+}
+/* Text field */
+#rowHolder > div > div {
+    width: 190px;
+    height: 28px;
+    margin: 0 0 14px 0;
+    display: inline-block; 
+}
+/* Text field - text */
+#rowHolder > div > div > p {
+    font-size: 10px;
+    font-weight: 700;
+    text-align: left;
+    padding: 7px 0 0 0;
+    margin: 0 0 0 70px;
+}
+/* Button done */
+#rowHolder > div > div + div { 
+    width: 39px;
+    height: 28px;
+    position: relative;
+    bottom: 1px;
+    right: 30px;
+    cursor: pointer;
+}
+/* Button done - text */
+#rowHolder > div > div + div > p {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 8px;
+    font-weight: 400;
+    padding: 8px 0 0 0;
+    margin: 0;
+}      
+/* Button del */
+#rowHolder > div > div + div + div {
+    width: 38px;
+    height: 28px;
+    position: relative;
+    bottom: 1px;
+    right: 30px;
+    cursor: pointer;
+}
+/* Button del - text */
+#rowHolder > div > div + div + div > p {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 8px;
+    font-weight: 400;
+    padding: 8px 0 0 0;
+    margin: 0;
+}
+#rowHolder + div > input {
+    width: 60px;
+    font-size: 15px;
+    background-color: grey;
+}
